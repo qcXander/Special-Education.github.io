@@ -1,0 +1,39 @@
+#homeheading{
+    color:rgb(120, 32, 80);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 48px;
+    text-align:center;
+}
+
+img{
+    width:50%;
+    height: auto;
+    border:solid black 5px;
+    margin-bottom:5%;
+    border-radius: 30%;
+    padding: 10px;
+}
+
+
+    section {
+        box-sizing: border-box;
+        border: 1px solid blue;
+        width: 100%;
+        float: left;
+      }
+      
+      div {
+        margin: 5px;
+        width: 50px;
+        height: 150px;
+      }
+      
+      .left {
+        float: left;
+        background: pink;
+      }
+      
+      .right {
+        float: right;
+        background: cyan;
+      }

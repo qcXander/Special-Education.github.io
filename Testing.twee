@@ -1,0 +1,181 @@
+:: StoryTitle
+Testing
+
+
+:: StoryData
+{
+  "ifid": "74F7C101-C270-45FC-9899-033B74850D40",
+  "format": "SugarCube",
+  "format-version": "2.36.1",
+  "start": "Start",
+  "zoom": 1
+}
+
+
+:: \ https://www.cdc.gov/visionhealth/basics/ced/index.html#:~:text=The%20leading%20causes%20of%20blindness,disorders%20include%20amblyopia%20and%20strabismus. {"position":"725,525","size":"100,100"}
+
+
+
+:: \ https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment {"position":"850,525","size":"100,100"}
+
+
+
+:: Digital literacy {"position":"725,775","size":"100,100"}
+[[Explore all services in NYC->Interactive map]]
+
+
+:: Interactive map {"position":"725,650","size":"100,100"}
+Here will display an interactive map created by Knight Lab about the institutions and centers providing particular assistance, services, or training to this special group of people.
+
+[[The history of special services]]
+
+
+:: Intro {"position":"600,400","size":"100,100"}
+Hey $name,
+
+Have you ever prepared to get blind?
+
+<<linkreplace "Continue" t8n>>\
+XXX did.....
+Here is an interview with someone who has been diagnosed with a particular eye disease and has been preparing for his or her new life.
+
+	<<linkreplace "Continue" t8n>>\
+		XXX disease is not the only illness causing impaired vision.
+        Based on CDC record, there are ..... 
+        [[Read more | https://www.cdc.gov/visionhealth/basics/ced/index.html#:~:text=The%20leading%20causes%20of%20blindness,disorders%20include%20amblyopia%20and%20strabismus.]]
+        Eyes are vulnerable. So do us.	
+	<</linkreplace>>\
+<</linkreplace>>\
+
+
+[[Continue->Next]]
+
+[[Return|Start]]
+
+
+:: Navigation {"position":"475,775","size":"100,100"}
+[[Explore all services in NYC->Interactive map]]
+
+
+:: Next {"position":"600,525","size":"100,100"}
+Hey $name,
+
+Have you already gotten ready to be blind?
+
+<<linkreplace "Continue" >>\
+I know you won't say you're ready even if I ask you a thousand times.
+
+	<<linkreplace "Continue" >>\
+			But accidents won't give you time to respond.
+            XXX was a .....
+            Here is an interview with someone who suddenly lost his or her vision and experienced many more difficulties in keeping on with their life.
+<</linkreplace>>\
+	<<linkreplace "Continue" >>\
+            Things may not be so bad, because you'll have people around you who will understand and help you transition to a new life.
+            Here is an interview with someone who suddenly lost his or her vision and experienced many more difficulties in keeping on with their life.
+<</linkreplace>>\
+	<<linkreplace "Continue" >>\
+            But what if the help is [[Hard to reach...->Setback]]
+            
+	<</linkreplace>>\
+<</linkreplace>>\
+
+
+[[Return|Start]]        
+
+
+:: Rehabilitation {"position":"600,775","size":"100,100"}
+[[Explore all services in NYC->Interactive map]]
+
+
+:: Setback {"position":"600,650","size":"100,100"}
+This part will contain text, photos, audio stories/interviews, external sources, and quotes to analyze what setbacks or difficulties a visually impaired individual will encounter from the first moment they notice the situation.
+
+Each object links to a kind of service applied by special service institutions in NYC, such as [[Rehabilitation]], [[Digital literacy]], [[Navigation]], etc.
+
+
+[[Explore all services in NYC->Interactive map]]
+
+
+
+From this part, there is no RETURN button to look back at, reflecting the irreversible disabilities many people face and are facing.
+
+
+
+
+:: Start {"position":"600,275","size":"100,100"}
+<center><h1>How do you survive if you loss vision after 22 years old? </h1></center>
+
+Welcome to the world of [[blind and visually imparied]]
+
+Hey what's your name?
+<<textbox "$name" "name">>
+
+
+<img src="D:\文稿\website\00nyblind1-videoSixteenByNineJumbo1600.jpg">
+
+[[Watch our documentary->Start to watch our documentary]] [[Explore all services in NYC->Interactive map]]  [[The history of special services]]  
+
+[[Continue->Intro]]
+
+
+:: Start to watch our documentary {"position":"475,400","size":"100,100"}
+We will have an interactive documentary here, targeting the personal stories of visually impaired adults, their families, and special service practitioners.
+
+
+[[Continue->Next]]
+[[Return|Start]]
+
+
+:: The end {"position":"850,1025","size":"100,100"}
+Let's experience vision loss
+
+
+:: The history of special services {"position":"850,775","size":"100,100"}
+Here will display a timeline of special service facilities
+
+[[I have understood->What's next]]
+
+
+:: What's next {"position":"850,900","size":"100,100"}
+After knowing all the special services provided, are you ready to face the vision loss?
+
+<<link "Countdown!">>
+<<set _timer to 10>>
+<<replace "#timer-display">>_timer<</replace>>
+<<repeat 1s>>
+\<<replace "#timer-display">>
+\<<if _timer is 1>>
+\<<replace "#timer-display">><</replace>><<stop>>
+\<<else>>
+\<<set _timer to _timer - 1>>_timer
+\<</if>>
+\<</replace>>
+\<</repeat>>
+<</link>>
+
+
+[[Continue->The end]]
+
+
+:: blind and visually imparied {"position":"725,400","size":"100,100"}
+Vision, the most dominant of our senses, plays a critical role in every facet and stage of our lives. We take vision for granted, but without vision, we struggle to learn, to walk, to read, to participate in school and to work.
+
+Vision impairment occurs when an eye condition affects the visual system and its vision functions. Everyone, if they live long enough, will experience at least one eye condition in their lifetime that will require appropriate care.
+
+Vision impairment has serious consequences for the individual across the life course. Many of these consequences can be mitigated by timely access to quality eye care. Eye conditions that can cause vision impairment and blindness – such as cataract or refractive error – are, for good reasons, the main focus of eye care strategies; nevertheless, the importance of eye conditions that do not typically cause vision impairment – such as dry eye or conjunctivitis – must not be overlooked. These conditions are frequently among the leading reasons for presentation to eye care services.
+
+<img src="D:\文稿\website\15vision1-videoSixteenByNineJumbo1600.jpg">
+
+[[Read more | https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment]]
+
+[[Continue->Next]]
+[[Watch our documentary->Start to watch our documentary]]
+[[Explore special services->Interactive map]]
+[[Return|Start]]
+
+
+:: StoryStylesheet [stylesheet]
+.blur {
+    filter: blur(3px);
+}
